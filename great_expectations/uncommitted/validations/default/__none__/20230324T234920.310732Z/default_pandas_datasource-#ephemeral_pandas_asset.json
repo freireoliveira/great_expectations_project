@@ -1,0 +1,216 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {},
+      "data_asset_name": "#ephemeral_pandas_asset",
+      "data_connector_name": "fluent",
+      "datasource_name": "default_pandas_datasource"
+    },
+    "batch_markers": {
+      "ge_load_time": "20230324T234920.070115Z",
+      "pandas_data_fingerprint": "e302ceb9f9a18712ff3f55c1c6c44a16"
+    },
+    "batch_spec": {
+      "reader_method": "read_csv",
+      "reader_options": {
+        "filepath_or_buffer": "Walmart.csv"
+      }
+    },
+    "checkpoint_id": null,
+    "checkpoint_name": "my_quickstart_checkpoint",
+    "expectation_suite_name": "default",
+    "great_expectations_version": "0.16.1",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2023-03-24T20:49:20.310732-03:00"
+    },
+    "validation_id": null,
+    "validation_time": "20230324T234920.312732Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset",
+          "column": "Sales",
+          "type_list": [
+            "float",
+            "int"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "float64"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset",
+          "column": "Quantity",
+          "type_list": [
+            "float",
+            "int"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "float64"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset",
+          "column": "Quantity",
+          "max_value": 100
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 3203,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset",
+          "column": "Profit",
+          "type_list": [
+            "float",
+            "int"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "float64"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset",
+          "column": "Order ID"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {},
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset",
+          "column": "Order ID"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 3203,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "default_pandas_datasource-#ephemeral_pandas_asset",
+          "column": "Order Date",
+          "max_value": "2023-03-24",
+          "parse_strings_as_datetimes": true
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 3203,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 7,
+    "success_percent": 100.0,
+    "successful_expectations": 7,
+    "unsuccessful_expectations": 0
+  },
+  "success": true
+}
